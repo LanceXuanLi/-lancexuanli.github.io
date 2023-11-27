@@ -3,21 +3,21 @@
 # --------------------------------------
 
 nav:
-  logo:  # image
-  display_title: true
-  fixed: false # fixed navigation bar
+  logo: /img/favicon.png # image
+  display_title: false
+  fixed: true # fixed navigation bar
 
 # Menu 目錄
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
-  # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
+  Home: / || fas fa-home
+  Archives: /archives/ || fas fa-archive
+  Tags: /tags/ || fas fa-tags
+  Categories: /categories/ || fas fa-folder-open
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
-  # About: /about/ || fas fa-heart
+  Link: /link/ || fas fa-link
+  About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -44,7 +44,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: /img/albert-park.jpg
   effect: false
 
 # Disable all banner image
@@ -54,7 +54,7 @@ disable_top_img: false
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: 'linear-gradient(20deg, #add8e6, #9b59b6)'
 
 # The banner image of archive page
 archive_img:
@@ -102,10 +102,10 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
@@ -211,6 +211,7 @@ footer:
   custom_text:
   copyright: true # Copyright of theme and framework
 
+
 # aside (側邊欄)
 # --------------------------------------
 
@@ -233,7 +234,7 @@ aside:
       text: Follow Me
       link: https://github.com/xxxxxx
   card_announcement:
-    enable: true
+    enable: false
     content: This is my Blog
   card_recent_post:
     enable: true
@@ -279,8 +280,8 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 11/27/2023
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -297,13 +298,13 @@ newest_comments:
 translate:
   enable: false
   # The text of a button
-  default: 繁
+  default: '简'
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
-  msgToTraditionalChinese: '繁'
+  msgToTraditionalChinese: '简'
   # The text of the button when the language is Traditional Chinese
   msgToSimplifiedChinese: '簡'
 
@@ -641,10 +642,10 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: 
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -671,11 +672,11 @@ activate_power_mode:
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: false
+  click_to_change: true
   mobile: false
 
 # Fluttering Ribbon (動態彩帶)
