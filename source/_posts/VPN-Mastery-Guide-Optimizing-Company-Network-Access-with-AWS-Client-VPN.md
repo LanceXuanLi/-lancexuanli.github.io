@@ -1,14 +1,18 @@
 ---
-title: 'VPN Mastery Guide: Optimizing Company Network Access with AWS Client VPN (Part 1)'
-tags: 
-  - 'Devops'
-  - 'AWS'
-  - 'Cloud'
-  - 'Security'
-  - 'VPN' 
-  - 'AWS Client VPN'
-  - 'Mutual authentication'
+layout: drafts
+title: >-
+  VPN Mastery Guide: Optimizing Company Network Access with AWS Client VPN
+tags:
+  - Devops
+  - AWS
+  - Cloud
+  - Security
+  - VPN
+  - AWS Client VPN
+  - Mutual authentication
+date: 2023-12-06 21:58:55
 ---
+
 
 # VPN Mastery Guide: Optimizing Company Network Access with AWS Client VPN
 
